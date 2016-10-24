@@ -1,0 +1,33 @@
+/*
+
+Siesta 2.1.2
+Copyright(c) 2009-2015 Bryntum AB
+http://bryntum.com/contact
+http://bryntum.com/products/siesta/license
+
+*/
+.target-inspector-box {
+    position            : absolute;
+    pointer-events      : none;
+    z-index             : 100001;
+    border              : 2px solid red;
+    transition-property : left, top, width, height;
+    transition-duration : 0.3s;
+    background-color    : rgba(195, 218, 249, 0.3);
+}
+
+.target-inspector-label {
+    display        : inline-block;
+    margin-top     : -10px;
+    font-size      : 10px;
+    padding        : 2px;
+    pointer-events : auto;
+    background     : rgb(32, 169, 220);
+    color          : #fff;
+    text-decoration: none;
+    white-space    : nowrap;
+}
+
+.target-inspector-label:hover {
+    text-decoration: underline;
+}

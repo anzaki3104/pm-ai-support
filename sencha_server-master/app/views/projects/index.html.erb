@@ -1,0 +1,23 @@
+<% provide(:title, 'Project list') %>
+<h1>Projects belong "test" user</h1>
+
+<ui>
+
+<% @projects.each do |p| %>
+
+  <li>
+    <strong>
+    <%= link_to p.pjname, p, medhod: :show %>
+    </strong>
+  | <%= link_to "delete", p, method: :delete,
+                   data: { confirm: "You sure?" } %>
+  </li>
+
+<% end %>
+<br>
+--<br>
+<a class="btn btn-danger" href="/app-release.apk">
+  Download FOOD_NOTE(V1)
+</a>
+
+</ui>

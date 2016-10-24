@@ -1,0 +1,31 @@
+<% provide(:title, "Project: "+@project.pjname) %>
+<h1>Project detail</h1>
+
+
+<h4>
+  [<%= @project.pjname %>]
+</h4>
+
+<ui>
+<% @project.events.each do |e| %>
+
+  <li>
+      [<%= e.event %>
+      /<%= e.operator %>
+      /<%= e.param %>]
+
+      <% e.actions.each do |action| %>
+
+        <br>
+        ACTION:
+        <%= action.action  %>
+        /
+        <%= action.param  %>
+      <% end %>
+      <br>
+      <br>
+  </li>
+
+<% end %>
+
+</ui>
